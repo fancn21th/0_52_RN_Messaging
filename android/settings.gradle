@@ -1,3 +1,5 @@
 rootProject.name = 'rnmessaging'
+include ':react-native-rong-imlib'
+project(':react-native-rong-imlib').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-rong-imlib/android')
 
 include ':app'

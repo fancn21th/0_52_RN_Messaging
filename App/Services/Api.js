@@ -42,6 +42,9 @@ const create = (baseURL = defaultBaseUrl) => {
   const login =
     (email, password) => api.post('/auth/authenticate', { email, password })
 
+  const getIMToken =
+    () => api.get('/group-buying/im/users/token')
+
   // ------
   // STEP 3
   // ------
@@ -58,6 +61,7 @@ const create = (baseURL = defaultBaseUrl) => {
     // a list of the API functions from step 2
     login,
     setToken,
+    getIMToken,
   }
 }
 
